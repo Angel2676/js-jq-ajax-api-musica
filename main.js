@@ -26,4 +26,17 @@ $.ajax(
             }
             }
 
+
             );
+
+
+        $("#scelta option").click(function(){
+            var genere = $(this).html();
+            if (genere == "all") {
+                $(".cd").show();
+            } else {
+            $(".cd").hide();
+            $(".cd."+genere).show()
+
+            }
+        })
